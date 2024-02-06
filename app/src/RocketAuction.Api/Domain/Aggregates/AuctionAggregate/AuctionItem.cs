@@ -8,11 +8,13 @@ public sealed class AuctionItem : Entity
     public AuctionItem(string brand,
                        decimal basePrice,
                        AuctionItemCondition condition,
+                       Guid auctionId,
                        IValidationContext validationContext)
     {
         Brand = brand;
         BasePrice = basePrice;
         Condition = condition;
+        AuctionId = auctionId;
         
         Validate(validationContext);
     }
@@ -22,7 +24,7 @@ public sealed class AuctionItem : Entity
     public AuctionItemCondition Condition { get; private set; }
     public Guid? AuctionId { get; private set; }
 
-    public void DisassociateFromAuction()
+    public void UnlinkFromAuction()
     {
         if (AuctionId is null)
             throw new InvalidOperationException("Auction item is already disassociated from auction.");

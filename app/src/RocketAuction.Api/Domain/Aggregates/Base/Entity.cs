@@ -1,7 +1,9 @@
-﻿using RocketAuction.Api.Domain.Validations;
+﻿using System.Diagnostics.CodeAnalysis;
+using RocketAuction.Api.Domain.Validations;
 
 namespace RocketAuction.Api.Domain.Aggregates.Base
 {
+    [ExcludeFromCodeCoverage]
     public abstract class Entity
     {
         protected Entity()

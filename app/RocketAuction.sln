@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{139FBF7B-CB9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketAuction.Api", "src\RocketAuction.Api\RocketAuction.Api.csproj", "{C710E9C6-786C-4227-9EB0-65C9C2D55F7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketAuction.Domain.UnitTests", "tests\RocketAuction.Domain.UnitTests\RocketAuction.Domain.UnitTests.csproj", "{09CEDB7C-1464-4197-8E9C-EF93EFFC4C4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{20F7FD16-C9B5-472E-A7AF-7FBF2BD47174}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +21,16 @@ Global
 		{C710E9C6-786C-4227-9EB0-65C9C2D55F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C710E9C6-786C-4227-9EB0-65C9C2D55F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C710E9C6-786C-4227-9EB0-65C9C2D55F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09CEDB7C-1464-4197-8E9C-EF93EFFC4C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CEDB7C-1464-4197-8E9C-EF93EFFC4C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CEDB7C-1464-4197-8E9C-EF93EFFC4C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CEDB7C-1464-4197-8E9C-EF93EFFC4C4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C710E9C6-786C-4227-9EB0-65C9C2D55F7E} = {139FBF7B-CB9B-43D1-91CF-0FC6B429C53F}
+		{09CEDB7C-1464-4197-8E9C-EF93EFFC4C4C} = {20F7FD16-C9B5-472E-A7AF-7FBF2BD47174}
 	EndGlobalSection
 EndGlobal

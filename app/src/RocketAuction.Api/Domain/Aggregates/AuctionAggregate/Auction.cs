@@ -20,7 +20,7 @@ namespace RocketAuction.Api.Domain.Aggregates.AuctionAggregate
         public string Name { get; private set; }
         public DateTime StartsAt { get; private set; }
         public DateTime EndsAt { get; private set; }
-        public IList<AuctionItem> Items { get; private set; } = new List<AuctionItem>();
+        public IList<AuctionItem> Items { get; } = new List<AuctionItem>();
 
         public void AddItem(AuctionItem item)
         {
@@ -30,11 +30,11 @@ namespace RocketAuction.Api.Domain.Aggregates.AuctionAggregate
             Items.Add(item);
         }
 
-        public void RemoveItem(Guid itemId)
+        public void RemoveItem(AuctionItem item)
         {
-            var auctionItem = Items.SingleOrDefault(x => x.Id.Equals(itemId));
+            var auctionItem = Items.SingleOrDefault(x => x.Id.Equals(item.Id));
 
-            auctionItem?.DisassociateFromAuction();
+            auctionItem?.UnlinkFromAuction();
         }
         
         public override void Validate(IValidationContext context)
