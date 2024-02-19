@@ -396,3 +396,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.idea/.idea.rocket-auction.dir/.idea/.gitignore
+/.idea/.idea.rocket-auction.dir/.idea/encodings.xml
+/.idea/.idea.rocket-auction.dir/.idea/aws.xml
+/.idea/.idea.rocket-auction.dir/.idea/indexLayout.xml
+/.idea/.idea.rocket-auction.dir/.idea/vcs.xml
